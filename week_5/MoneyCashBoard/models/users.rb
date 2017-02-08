@@ -10,24 +10,24 @@ class Merchant
   end
 
   def save()
-    sql = "INSERT INTO users (name) VALUES ('#{@name}') RETURNING *;"
+    sql = "INSERT INTO merchants (name) VALUES ('#{@name}') RETURNING *;"
     results = SqlRunner.run(sql).first
   end
 
-  def all()
-    sql = "SELECT * FROM users"
+  def self.all()
+    sql = "SELECT * FROM merchants"
     results = SqlRunner.run( sql )
     return results.map { |hash| Merchant.new( hash ) }
   end
 
   def find( id )
-    sql = "SELECT * FROM users WHERE id=#{id}"
+    sql = "SELECT * FROM merchants WHERE id=#{id}"
     results = SqlRunner.run( sql )
     return Merchant.new( results.first )
   end
 
   def delete_all
-    sql = "DELETE FROM users"
+    sql = "DELETE FROM merchants"
     SqlRunner.run( sql )
   end
 

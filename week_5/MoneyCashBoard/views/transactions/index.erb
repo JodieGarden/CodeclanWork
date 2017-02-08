@@ -1,12 +1,18 @@
 <table>
     <tr>
+      <th>Amount</th>
+      <td>|</td>
       <th>Name</th>
-      <th></th>
-      <th>Speed</th>
     </tr>
     <% for transaction in @transactions %>
     <tr>
-      <td><%= transaction.amount %></td>
+      <td><%= transaction.total %></td>
+      <td>|</td>
+      <td><%=transaction.name%></td>
+      <td>
+      <p3><a href="/transactions/<%= transaction.id %>">Show Transaction</a></p3>
+      </td>
     </tr>
     <% end %>
   </table>
+

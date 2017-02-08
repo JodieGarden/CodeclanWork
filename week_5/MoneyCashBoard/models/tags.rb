@@ -17,7 +17,7 @@ class Tags
     @id = results.first()['id'].to_i
   end
 
-  def all()
+  def self.all()
     sql = "SELECT * FROM victims"
     results = SqlRunner.run( sql )
     return results.map { |hash| Victim.new( hash ) }
