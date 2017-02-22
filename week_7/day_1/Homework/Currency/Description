@@ -1,0 +1,2 @@
+java.util.currency class represents currency. All currencies are identified by their ISO 4217 code eg (GBP, USD, CUP)
+There is no need for a public constructor due to the design of the class which only allows for one currency instance for every currency.
