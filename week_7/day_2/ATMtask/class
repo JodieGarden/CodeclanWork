@@ -1,0 +1,15 @@
+class ATM
+- Cash reserves int 
+-location String
+-max withdrawal amount
+
+class User
+- wallet int
+- name String
+
+extensions 
+- Account
+
+class Account 
+- balance int
+- pin int
