@@ -3,11 +3,22 @@
 <form action="/transactions" method="post">
   <label> 
       Name:
-    <input type="text" name="name">
+    <select name ="name">
+    <% for transaction in @transactions do %>
+     <option value="<%= transaction.name %>"><%=transaction.name%></option>
+        <% end %>
+      </select>
+    </label>
+
   </label>
+
   <label>
-   Amount:
-    <input type="text" name="amount">
+    Amount
+  <select name ="amount">
+  <% for transaction in @transactions do %>
+   <option value="<%= transaction%>"><%=transaction.total%></option>
+      <% end %>
+    </select>
   </label>
   <label>
 

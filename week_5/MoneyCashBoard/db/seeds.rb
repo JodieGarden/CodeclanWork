@@ -7,11 +7,18 @@ require('./models/users')
 
 
 
-merchant1 = Merchant.new({'name' => 'Tesco', 'amount' => 10})
+merchant1 = Merchant.new({'name' => 'Tesco'})
 
-merchant2 = Merchant.new({'name' =>'Subway', 'amount' => 30})
+merchant2 = Merchant.new({'name' =>'BP'})
+
+merchant3 = Merchant.new({'name' =>'H&M'})
+
 
 merchant1.save
+
+merchant2.save
+
+merchant3.save
 
 transaction1 = Transaction.new({'total' => 10, 'name' => 'Food'})
 transaction2 = Transaction.new({'total' => 18, 'name' => 'Petrol'})

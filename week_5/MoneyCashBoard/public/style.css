@@ -1,18 +1,20 @@
 h1{
   font-family: 'Cinzel', serif;
-
 }
 
 table, th, td {
-    border: 1px solid black;
+  color:cornflowerblue;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+html { 
+  background: url(credit-squeeze-taxation-purse-tax-46242.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-
-body {
-background white url: ('the-last-shirt-dollar-bill-20-euro-folded-128878.jpeg')
-background-size: 100%;
-background-repeat: no-repeat;
-color: papayawhip;
-padding: 0px;
-margin: 0px;;
-}
+/*tr, th, td {
+background-color: green;
+}*/

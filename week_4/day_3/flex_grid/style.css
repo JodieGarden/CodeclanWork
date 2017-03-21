@@ -1,0 +1,46 @@
+.grid{
+border: solid 3px orangered;
+}
+
+.grid-row{
+  display:flex;
+  flex-direction: column;
+}
+
+.cell{
+  flex: 1;
+  padding: 10px;
+  border:solid 1px orangered;
+}
+
+@media all and (min-width: 480px) {
+
+  .grid-row-sm{
+    flex-direction:row-reverse;
+  }
+}
+
+@media all and (min-width: 720px) {
+
+  .grid-row-med{
+    flex-direction: :row;
+  }
+
+
+}
+
+@media all and (min-width: 960px) {
+
+  .grid-row-lrg{
+    flex-direction: row;
+  }
+}
+
+.box-model{
+  background-color: steelblue;
+  width: 30%;
+  padding: 50px;
+  border: 10px solid black;
+  margin-top: 5px; 
+
+}

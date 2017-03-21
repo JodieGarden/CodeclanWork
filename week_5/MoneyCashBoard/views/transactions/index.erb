@@ -1,14 +1,14 @@
 <table>
     <tr>
-      <th>Amount</th>
-      <td>|</td>
       <th>Name</th>
+      <td>|</td>
+      <th>Amount</th>
     </tr>
     <% for transaction in @transactions %>
     <tr>
-      <td><%= transaction.total %></td>
-      <td>|</td>
       <td><%=transaction.name%></td>
+      <td>|</td>
+      <td><%= transaction.total %></td>
       <td>
       <p3><a href="/transactions/show">Edit Transaction</a></p3>
       </td>

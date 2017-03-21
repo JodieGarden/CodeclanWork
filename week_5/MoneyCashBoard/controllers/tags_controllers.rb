@@ -6,5 +6,6 @@ require('./models/tags')
 require('./models/transactions')
 
 get '/tags' do
+ @tags = Tags.new
   erb(:"tags/index")
 end

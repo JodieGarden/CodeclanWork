@@ -1,0 +1,3 @@
+class Medic < Person
+
+end 

@@ -1,11 +1,21 @@
-<div class="Transaction Details">
+<div class="content_container">
+<h2>Edit a Transaction</h2>
 
-<p4>First Name: <%= @transaction.name %> </p4>
-<p5>Total: <%= @transaction.total %> </p5>
-<p8><a href="/transactions/<%= @transaction.id %>/edit">Edit Transaction</a></p8>
+<form action="/transactions/<%= @transaction.id %>" method="post">
+  <label>
+    Transaction ID    <input type="number" name="transaction_id" value="<%= @transaction.id %>">
+  </label>
 
-</div>
+  <label>
+  Transaction Name
+    <input type="text" name="name" value="<%= @transaction.name %>">
+  </label>
 
-<form action="/transactions/<%= @transactions.id %>/delete" method="post">
-<input type ="submit" value="Delete" />
+  <label>
+    Amount
+    <input type="number" name="value" value=;<%= @transaction.amount) %>">
+  </label>
+
+  <input type='submit' value="Update">
 </form>
+</div>

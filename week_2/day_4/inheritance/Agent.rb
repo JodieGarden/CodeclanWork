@@ -1,0 +1,4 @@
+class Agent < Person
+
+
+end
